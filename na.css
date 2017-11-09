@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+kbd{
+    
+    border: 1px solid red;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 20px;
+    width: 80px;
+    height: 80px;
+    position: relative;
+    margin: 10px;
+}
+kbd>button{
+    display: none;
+}
+kbd:hover button:nth-child(1){
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+kbd:hover button:nth-child(2){
+    display: block;
+    position: absolute;
+    right: 1em;
+    bottom: 0;
+}
+#x{
+    margin: 150px 0 0 0;
+    text-align: center;
+}

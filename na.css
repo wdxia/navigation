@@ -2,16 +2,41 @@
     margin: 0;
     padding: 0;
 }
-kbd{
-    
-    border: 1px solid red;
+body{
+    margin-top: 350px;
+    background: url('./img/qu.png') no-repeat center center;
+    background-size: cover; 
+}
+
+.key{  
+    border: 1px solid #3f2929,2px solid #1a1b1c,3px solid #1f2020;
     display: inline-block;
     text-transform: uppercase;
     font-size: 20px;
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 40px;
+    background-image: -webkit-linear-gradient(bottom, #111111 0%, #292929 100%);
+    border-radius: 6px;
+    color: #d0d0d0;
     position: relative;
-    margin: 10px;
+    font-family:  Helvetica;
+    box-shadow: 0 0 0px 2px black,0 3px 0 2px #080808;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.key img{
+    position: absolute;
+    left: 2px;
+    bottom: 2px;
+    width: 14px;
+    height: 14px;
+}
+.row{
+    margin: 16px;
+}
+.row .key{
+    margin: 0 10px;
 }
 kbd>button{
     display: none;
@@ -19,15 +44,13 @@ kbd>button{
 kbd:hover button:nth-child(1){
     display: block;
     position: absolute;
-    right: 0;
-    bottom: 0;
+    right: 1px;
+    bottom: 1px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
 }
-kbd:hover button:nth-child(2){
-    display: block;
-    position: absolute;
-    right: 1em;
-    bottom: 0;
-}
+
 #x{
     margin: 150px 0 0 0;
     text-align: center;
